@@ -30,7 +30,7 @@ export const experience = [
         company: 'DevelopersHub Corporation©',
         role: 'Back End Developer',
         duration: 'Aug 2025 - Oct 2025 · 3 mos',
-        location: 'Remote',
+        location: 'Pakistan · Remote',
         description: [
             'Developed backend solutions and server-side applications',
             'Built and maintained APIs for various projects',

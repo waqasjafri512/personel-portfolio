@@ -71,13 +71,6 @@ const Hero = () => {
                         <span>Download Resume</span>
                     </a>
                 </div>
-
-                <div className="hero-scroll-indicator animate-on-scroll">
-                    <div className="scroll-mouse">
-                        <div className="scroll-wheel"></div>
-                    </div>
-                    <span>Scroll Down</span>
-                </div>
             </div>
         </section>
     );

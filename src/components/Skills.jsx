@@ -69,7 +69,7 @@ const Skills = () => {
                     <div className="progress-bars">
                         <div className="progress-item">
                             <div className="progress-header">
-                                <span>Frontend Development</span>
+                                <span>Backend Development</span>
                                 <span>95%</span>
                             </div>
                             <div className="progress-bar">
@@ -78,8 +78,8 @@ const Skills = () => {
                         </div>
                         <div className="progress-item">
                             <div className="progress-header">
-                                <span>Backend Development</span>
-                                <span>99%</span>
+                                <span>Frontend Development</span>
+                                <span>90%</span>
                             </div>
                             <div className="progress-bar">
                                 <div className="progress-fill" style={{ '--progress': '90%' }}></div>

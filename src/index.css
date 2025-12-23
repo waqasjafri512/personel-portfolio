@@ -3,6 +3,7 @@
    ============================================ */
 
 /* Dark Theme (Default) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
 :root,
 [data-theme="dark"] {
   /* Colors */
@@ -99,7 +100,6 @@
 }
 
 /* Global Styles */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
 
 *,
 *::before,
@@ -1228,6 +1228,24 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.contact .section-title {
+  justify-content: center;
+}
+
+.contact .section-title::before {
+  content: '';
+  flex: 1;
+  max-width: 150px;
+  height: 1px;
+  background: linear-gradient(270deg, var(--color-border), transparent);
+  margin-right: var(--spacing-md);
+}
+
+.contact .section-title::after {
+  max-width: 150px;
+  background: linear-gradient(90deg, var(--color-border), transparent);
 }
 
 .contact-info {

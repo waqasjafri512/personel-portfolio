@@ -23,7 +23,6 @@ export const skills = {
     { name: 'MongoDB', icon: '🍃' },
     { name: 'PostgreSQL', icon: '🐘' },
     { name: 'MySQL', icon: '🐬' },
-    { name: 'Redis', icon: '🔴' },
     { name: 'Prisma', icon: '△' },
   ],
   tools: [
@@ -32,7 +31,6 @@ export const skills = {
     { name: 'Docker', icon: '🐳' },
     { name: 'VS Code', icon: '💻' },
     { name: 'Postman', icon: '📮' },
-    { name: 'Jira', icon: '📋' },
     { name: 'Linux', icon: '🐧' },
   ],
 };
