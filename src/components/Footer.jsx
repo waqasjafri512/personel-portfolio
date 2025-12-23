@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-logo">
-                    <span className="logo-text">MWA</span>
+                    <span className="logo-text">Muhammad Waqas Anjum</span>
                 </div>
 
                 <p className="footer-text">
