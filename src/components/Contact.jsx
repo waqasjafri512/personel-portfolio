@@ -135,52 +135,6 @@ const Contact = () => {
                             ))}
                         </div>
                     </div>
-
-                    <form className="contact-form animate-on-scroll" onSubmit={handleSubmit}>
-                        <div className="form-group">
-                            <label htmlFor="name">Name</label>
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                value={formData.name}
-                                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                                placeholder="Your Name"
-                                required
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="email">Email</label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                value={formData.email}
-                                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                                placeholder="your.email@example.com"
-                                required
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="message">Message</label>
-                            <textarea
-                                id="message"
-                                name="message"
-                                value={formData.message}
-                                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                                placeholder="Your message..."
-                                rows="5"
-                                required
-                            ></textarea>
-                        </div>
-                        <button type="submit" className="btn btn-primary">
-                            <span>Send Message</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <line x1="22" y1="2" x2="11" y2="13"></line>
-                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                            </svg>
-                        </button>
-                    </form>
                 </div>
             </div>
         </section>
