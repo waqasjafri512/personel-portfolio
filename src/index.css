@@ -4,6 +4,7 @@
 
 /* Dark Theme (Default) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
+
 :root,
 [data-theme="dark"] {
   /* Colors */
@@ -449,6 +450,10 @@ img {
   position: absolute;
   inset: 0;
   z-index: -1;
+  background-image: url('./assets/portfolio-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-gradient {
