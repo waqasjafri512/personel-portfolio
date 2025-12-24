@@ -3,7 +3,7 @@ export const experience = [
     {
         id: 1,  // Merged entry
         company: 'SOFTOO',
-        role: 'Full Stack Developer Intern - FAB & Prop-Log',
+        role: 'Full Stack Developer - FAB & Prop-Log',
         duration: 'Oct 2025 - Present',
         location: 'Islamabad, Pakistan · On-site',
         description: [
