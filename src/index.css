@@ -755,6 +755,88 @@ img {
 }
 
 /* ============================================
+   Education Section
+   ============================================ */
+.education {
+  padding: 100px 0;
+  background: var(--color-bg-primary);
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  max-width: 900px;
+  margin: 0;
+}
+
+.education-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  border: 1px solid var(--color-border);
+  transition: var(--transition-normal);
+  backdrop-filter: blur(10px);
+}
+
+.education-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-md), var(--shadow-glow);
+  transform: translateY(-5px);
+}
+
+.edu-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.edu-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-secondary-accent));
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.institution-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.degree-title {
+  font-size: 1rem;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-secondary-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 500;
+}
+
+.edu-meta {
+  display: flex;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.edu-meta span {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.edu-meta svg {
+  color: var(--color-accent);
+}
+
+/* ============================================
    Skills Section
    ============================================ */
 .skills {
@@ -904,75 +986,12 @@ img {
   background: var(--color-bg-secondary);
 }
 
-.timeline {
-  position: relative;
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
   max-width: 900px;
-  margin: 0 auto;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(180deg, var(--color-accent), var(--color-secondary-accent), var(--color-tertiary-accent));
-  transform: translateX(-50%);
-}
-
-.timeline-item {
-  position: relative;
-  width: 50%;
-  padding: var(--spacing-xl);
-}
-
-.timeline-item.left {
-  padding-right: var(--spacing-3xl);
-}
-
-.timeline-item.right {
-  left: 50%;
-  padding-left: var(--spacing-3xl);
-}
-
-.timeline-marker {
-  position: absolute;
-  top: var(--spacing-xl);
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.timeline-item.left .timeline-marker {
-  right: -25px;
-}
-
-.timeline-item.right .timeline-marker {
-  left: -25px;
-}
-
-.marker-dot {
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(135deg, var(--color-accent), var(--color-secondary-accent));
-  border-radius: 50%;
-  box-shadow: 0 0 20px var(--color-accent-glow);
-  animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-
-  0%,
-  100% {
-    box-shadow: 0 0 20px var(--color-accent-glow);
-  }
-
-  50% {
-    box-shadow: 0 0 30px var(--color-accent-glow), 0 0 40px var(--color-accent-glow);
-  }
+  margin: 0;
 }
 
 .experience-card {
@@ -1011,13 +1030,13 @@ img {
 }
 
 .company-name {
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: var(--color-text-primary);
 }
 
 .role-title {
-  font-size: 0.95rem;
+  font-size: 1rem;
   background: linear-gradient(90deg, var(--color-accent), var(--color-secondary-accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1028,7 +1047,7 @@ img {
 .card-meta {
   display: flex;
   gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
   flex-wrap: wrap;
 }
 
@@ -1036,8 +1055,8 @@ img {
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
-  font-size: 0.85rem;
-  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
 }
 
 .card-meta svg {
@@ -1064,23 +1083,8 @@ img {
 }
 
 @media (max-width: 768px) {
-  .timeline::before {
-    left: 20px;
-  }
-
-  .timeline-item,
-  .timeline-item.left,
-  .timeline-item.right {
-    width: 100%;
-    left: 0;
-    padding-left: 60px;
-    padding-right: var(--spacing-md);
-  }
-
-  .timeline-item.left .timeline-marker,
-  .timeline-item.right .timeline-marker {
-    left: 12px;
-    right: auto;
+  .experience-grid {
+    padding-left: 0;
   }
 }
 
