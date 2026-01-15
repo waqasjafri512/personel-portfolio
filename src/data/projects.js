@@ -112,7 +112,7 @@ export const projects = [
             'Responsive design and smooth user experience',
         ],
         techStack: ['React.js', 'Vite', 'JavaScript', 'CSS'],
-        liveUrl: null,
+        liveUrl: 'https://ijaz-portfolio-two.vercel.app/',
         githubUrl: 'https://github.com/waqasjafri512/Ijaz-portfolio',
     },
     {
@@ -126,8 +126,8 @@ export const projects = [
             'Responsive design and smooth user experience',
         ],
         techStack: ['React.js', 'Vite', 'JavaScript', 'CSS'],
-        liveUrl: null,
-        githubUrl: 'https://github.com/waqasjafri512/Ijaz-portfolio',
+        liveUrl: 'https://personel-portfolio-liart.vercel.app/',
+        githubUrl: 'https://github.com/waqasjafri512/personel-portfolio',
     },
     {
         id: 10,
