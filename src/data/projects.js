@@ -84,6 +84,79 @@ export const projects = [
         liveUrl: null,
         githubUrl: 'https://github.com/waqasjafri512/Quiz-app',
     },
+    {
+        id: 7,
+        title: 'Fitness Tracker',
+        type: 'Web Application',
+        description: [
+            'Premium MERN stack fitness tracking web application',
+            'Secure user authentication using JWT and bcrypt',
+            'Track workouts including cardio, exercises, supplements, and weight lifting',
+            'Personalized user profiles with name and email management',
+            'Modern glassmorphism UI with smooth animations and responsive design',
+        ],
+        techStack: [
+            'MongoDB', 'Express.js', 'React.js', 'Node.js', 'JWT Authentication', 'CSS (Glassmorphism UI)',
+        ],
+        liveUrl: null,
+        githubUrl: 'https://github.com/waqasjafri512/Fitness-tracker.git',
+    },
+    {
+         id: 8,
+        title: 'Ijaz Portfolio',
+        type: 'Web Application',
+        description: [
+            'Professional portfolio website designed for Ijaz',
+            'Built with React and Vite for high performance and fast development',
+            'Modern frontend architecture with clean and modular code',
+            'Responsive design and smooth user experience',
+        ],
+        techStack: ['React.js', 'Vite', 'JavaScript', 'CSS'],
+        liveUrl: null,
+        githubUrl: 'https://github.com/waqasjafri512/Ijaz-portfolio',
+    },
+    {
+        id: 9,
+        title: 'Personal Portfolio',
+        type: 'Web Application',
+        description: [
+            'Professional portfolio website designed for Muhammad Waqas Anjum',
+            'Built with React and Vite for high performance and fast development',
+            'Modern frontend architecture with clean and modular code',
+            'Responsive design and smooth user experience',
+        ],
+        techStack: ['React.js', 'Vite', 'JavaScript', 'CSS'],
+        liveUrl: null,
+        githubUrl: 'https://github.com/waqasjafri512/Ijaz-portfolio',
+    },
+    {
+        id: 10,
+        title: 'Blogs Backend',
+        type: 'Backend API (GraphQL)',
+        description: [
+            'Powerful backend service for a blogging platform',
+            'Implements GraphQL API for flexible data fetching',
+            'Secure authentication and authorization using JWT and Bcrypt',
+            'MongoDB integration with Mongoose for data persistence',
+        ],
+        techStack: ['Node.js', 'Express', 'GraphQL', 'MongoDB', 'JWT'],
+        liveUrl: null,
+        githubUrl: 'https://github.com/waqasjafri512/blogs-backend',
+    },
+    {
+        id: 11,
+        title: 'Alarm Clock App',
+        type: 'Android Application',
+        description: [
+            'Feature-rich alarm clock application for Android devices',
+            'Developed with Kotlin and modern Android SDK components',
+            'Simple and intuitive interface for managing daily alarms',
+            'Built with reliability and battery efficiency in mind',
+        ],
+        techStack: ['Kotlin', 'Android SDK', 'Gradle'],
+        liveUrl: null,
+        githubUrl: 'https://github.com/waqasjafri512/Alarm-clock',
+    }
 ];
 
 export default projects;
