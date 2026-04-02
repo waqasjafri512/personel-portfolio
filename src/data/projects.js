@@ -79,7 +79,7 @@ export const projects = [
     {
         id: 7,
         title: 'Fitness Tracker',
-        type: 'Web Application',
+        type: 'Web Application (Personal)',
         description: [
             'Premium MERN stack fitness tracking web application',
             'Secure user authentication using JWT and bcrypt',

@@ -134,6 +134,7 @@ body {
 
 main {
   flex: 1;
+  position: relative;
 }
 
 .container {
@@ -233,8 +234,9 @@ img {
 
 .btn-secondary {
   background: transparent;
-  color: var(--color-accent);
-  border: 1px solid var(--color-accent);
+  color: #ffffff;
+  border: 1px solid var(--color-accent-light);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .btn-secondary:hover {
@@ -278,7 +280,8 @@ img {
   z-index: 1000;
   padding: var(--spacing-lg) 0;
   transition: var(--transition-normal);
-  background: transparent;
+  background: rgba(15, 15, 26, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .navbar-scrolled {
@@ -323,6 +326,7 @@ img {
   color: var(--color-text-secondary);
   position: relative;
   padding: var(--spacing-xs) 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .nav-link::after {
@@ -450,10 +454,18 @@ img {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background-image: url('./assets/portfolio-bg.jpg');
+  background-image: url('./assets/hero-bg-updated.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.hero-background::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 15, 26, 0.65); /* Dark overlay */
+  z-index: 1;
 }
 
 .hero-gradient {
@@ -502,6 +514,8 @@ img {
 }
 
 .hero-content {
+  position: relative;
+  z-index: 10;
   text-align: center;
   max-width: 800px;
 }
@@ -511,10 +525,11 @@ img {
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: var(--spacing-md);
-  background: linear-gradient(135deg, var(--color-text-primary) 0%, var(--color-accent) 50%, var(--color-secondary-accent) 100%);
+  background: linear-gradient(135deg, #ffffff 0%, var(--color-accent-light) 50%, var(--color-secondary-accent) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   animation: title-glow 3s ease-in-out infinite alternate;
 }
 
@@ -531,20 +546,22 @@ img {
 .hero-subtitle {
   font-size: clamp(1.25rem, 3vw, 2rem);
   font-weight: 500;
-  background: linear-gradient(90deg, var(--color-accent), var(--color-secondary-accent));
+  background: linear-gradient(90deg, var(--color-accent-light), var(--color-secondary-accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: var(--spacing-lg);
   letter-spacing: 2px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .hero-description {
   font-size: clamp(1rem, 2vw, 1.25rem);
-  color: var(--color-text-secondary);
+  color: #e2e8f0;
   max-width: 600px;
   margin: 0 auto var(--spacing-2xl);
   line-height: 1.8;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-buttons {
@@ -1514,3 +1531,82 @@ a.item-value:hover {
   background: var(--color-accent);
   color: #ffffff;
 }
+
+/* ============================================
+   Background Decoration (Blobs/Bubbles)
+   ============================================ */
+.bg-blobs {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.blob {
+  position: absolute;
+  width: clamp(400px, 60vw, 800px);
+  height: clamp(400px, 60vw, 800px);
+  filter: blur(100px);
+  border-radius: 50%;
+  opacity: 0.35; /* Increased visibility */
+  animation: float-blob 20s ease-in-out infinite alternate;
+}
+
+.blob-1 {
+  top: 10%;
+  left: -15%;
+  background: radial-gradient(circle, var(--color-accent) 0%, transparent 80%);
+  animation-duration: 25s;
+}
+
+.blob-2 {
+  top: 30%;
+  right: -10%;
+  background: radial-gradient(circle, var(--color-secondary-accent) 0%, transparent 80%);
+  animation-duration: 30s;
+  animation-delay: -5s;
+}
+
+.blob-3 {
+  top: 50%;
+  left: 5%;
+  background: radial-gradient(circle, var(--color-tertiary-accent) 0%, transparent 80%);
+  animation-duration: 25s;
+  animation-delay: -10s;
+}
+
+.blob-4 {
+  top: 70%;
+  right: -15%;
+  background: radial-gradient(circle, var(--color-accent) 0%, transparent 80%);
+  animation-duration: 35s;
+  animation-delay: -2s;
+}
+
+.blob-5 {
+  top: 85%;
+  left: -10%;
+  background: radial-gradient(circle, var(--color-secondary-accent) 0%, transparent 80%);
+  animation-duration: 28s;
+}
+
+.blob-6 {
+  top: 45%;
+  right: 10%;
+  background: radial-gradient(circle, var(--color-accent) 0%, transparent 80%);
+  width: 350px;
+  height: 350px;
+  opacity: 0.2;
+  filter: blur(80px);
+}
+
+@keyframes float-blob {
+  0% { transform: translate(0, 0) rotate(0deg) scale(1); }
+  50% { transform: translate(5%, 5%) rotate(90deg) scale(1.1); }
+  100% { transform: translate(-5%, -5%) rotate(180deg) scale(1); }
+}
+
+[data-theme="light"] .blob {
+  opacity: 0.15;
+}
