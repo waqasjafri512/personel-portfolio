@@ -47,11 +47,11 @@ const Hero = () => {
                     Muhammad Waqas Anjum
                 </h1>
                 <h2 className="hero-subtitle animate-on-scroll">
-                    Full Stack Developer
+                    Full Stack Software Engineer
                 </h2>
                 <p className="hero-description animate-on-scroll">
                     I build scalable, secure, and high-performance web applications
-                    using React, Node.js, and NestJS.
+                    using React.js, Node.js, and NestJS.
                 </p>
 
                 <div className="hero-buttons animate-on-scroll">

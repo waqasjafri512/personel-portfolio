@@ -49,7 +49,7 @@ const Contact = () => {
                 </svg>
             ),
             label: 'Phone',
-            value: '+92 308 0425989',
+            value: '+92-308-0425989',
             href: 'tel:+923080425989',
         },
         {
