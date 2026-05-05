@@ -45,7 +45,7 @@ const Projects = () => {
                                 <div className="project-links">
                                     {project.githubUrl && (
                                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                                            <Github size={20} color="#ffffff" />
+                                            <Github size={20} color="#6366f1" />
                                         </a>
                                     )}
                                     {project.liveUrl && (

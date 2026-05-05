@@ -57,7 +57,7 @@ const Contact = () => {
         {
             name: 'GitHub',
             url: 'https://github.com/waqasjafri512',
-            icon: <Github size={24} color="#ffffff" />,
+            icon: <Github size={24} color="#6366f1" />,
         },
         {
             name: 'LinkedIn',
