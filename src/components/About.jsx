@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import profileImg from '../assets/profile.jpg';
+import { Briefcase, Rocket, Laptop, Award } from 'lucide-react';
 
 const About = () => {
     const aboutRef = useRef(null);
@@ -32,20 +33,20 @@ const About = () => {
                 <div className="about-content">
                     <div className="about-text">
                         <p className="animate-on-scroll">
-                            I am a results-driven <span className="highlight">Full Stack Software Engineer</span> with
-                            over <span className="highlight">1+ year</span> of experience building scalable
-                            and secure web applications using <span className="highlight">React.js</span>,
-                            <span className="highlight">Node.js</span>, and <span className="highlight">NestJS</span>.
+                            I am a <span className="highlight">Junior Full Stack Developer</span> with
+                            <span className="highlight">1+ year</span> of hands-on experience building and shipping
+                            real-world web applications. Specialized in <span className="highlight">React.js</span>,
+                            <span className="highlight">NestJS</span>, and <span className="highlight">PostgreSQL</span>.
                         </p>
                         <p className="animate-on-scroll">
-                            I specialize in <span className="highlight">enterprise and government-level systems</span>,
-                            focusing on RAG-based AI, REST APIs, authentication, RBAC, and performance optimization.
-                            My expertise includes working with <span className="highlight">Azure OpenAI</span>,
-                            <span className="highlight">PostgreSQL</span>, and <span className="highlight">Prisma</span>.
+                            I have production exposure to <span className="highlight">real-time systems</span>,
+                            <span className="highlight">AI integrations</span>, and <span className="highlight">role-based access platforms</span>.
+                            I'm an <span className="highlight">AWS Certified Cloud Practitioner</span> who actively
+                            participates in code reviews and thrives in sprint-based, collaborative teams.
                         </p>
                         <p className="animate-on-scroll">
-                            I enjoy solving real-world problems, writing clean code, and collaborating with
-                            cross-functional teams to deliver high-quality software solutions.
+                            I'm a fast learner who enjoys solving real-world problems, writing clean code, and
+                            collaborating with cross-functional teams to deliver high-quality software solutions.
                         </p>
                     </div>
 
@@ -59,20 +60,24 @@ const About = () => {
 
                 <div className="about-stats animate-on-scroll">
                     <div className="stat-item">
+                        <Briefcase className="stat-icon" size={24} color="#6366f1" />
                         <span className="stat-number">1+</span>
                         <span className="stat-label">Years Experience</span>
                     </div>
                     <div className="stat-item">
-                        <span className="stat-number">15+</span>
-                        <span className="stat-label">Projects Completed</span>
+                        <Rocket className="stat-icon" size={24} color="#ec4899" />
+                        <span className="stat-number">10+</span>
+                        <span className="stat-label">Features Shipped</span>
                     </div>
                     <div className="stat-item">
-                        <span className="stat-number">20+</span>
+                        <Laptop className="stat-icon" size={24} color="#14b8a6" />
+                        <span className="stat-number">25+</span>
                         <span className="stat-label">Technologies</span>
                     </div>
                     <div className="stat-item">
-                        <span className="stat-number">100%</span>
-                        <span className="stat-label">Client Satisfaction</span>
+                        <Award className="stat-icon" size={24} color="#f59e0b" />
+                        <span className="stat-number">4</span>
+                        <span className="stat-label">Certifications</span>
                     </div>
                 </div>
             </div>

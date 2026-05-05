@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
-import resumePdf from '../assets/Waqas-Anjum-Resume.pdf';
+import resumePdf from '../assets/Muhammad_Waqas_Anjum_Resume.pdf';
+import { ArrowRight, Download } from 'lucide-react';
 
 const Hero = () => {
     const heroRef = useRef(null);
@@ -47,27 +48,19 @@ const Hero = () => {
                     Muhammad Waqas Anjum
                 </h1>
                 <h2 className="hero-subtitle animate-on-scroll">
-                    Full Stack Software Engineer
+                    Junior Full Stack Developer
                 </h2>
                 <p className="hero-description animate-on-scroll">
-                    I build scalable, secure, and high-performance web applications
-                    using React.js, Node.js, and NestJS.
+                    Junior Full Stack Developer with 1+ year of hands-on experience building real-world web applications using React.js, NestJS, and PostgreSQL. AWS Certified Cloud Practitioner.
                 </p>
 
                 <div className="hero-buttons animate-on-scroll">
                     <button className="btn btn-primary" onClick={scrollToProjects}>
                         <span>View Projects</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
+                        <ArrowRight size={20} />
                     </button>
-                    <a href={resumePdf} download="Waqas-Anjum-Resume.pdf" className="btn btn-secondary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="7 10 12 15 17 10"></polyline>
-                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                        </svg>
+                    <a href={resumePdf} download="Muhammad_Waqas_Anjum_Resume.pdf" className="btn btn-secondary">
+                        <Download size={20} color="#6366f1" />
                         <span>Download Resume</span>
                     </a>
                 </div>

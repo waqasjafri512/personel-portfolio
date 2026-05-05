@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { education } from '../data/education';
+import { GraduationCap, Calendar, MapPin, CheckCircle } from 'lucide-react';
 
 const Education = () => {
     const educationRef = useRef(null);
@@ -38,10 +39,7 @@ const Education = () => {
                         >
                             <div className="edu-header">
                                 <div className="edu-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                                    </svg>
+                                    <GraduationCap size={24} color="#ffffff" />
                                 </div>
                                 <div className="edu-info">
                                     <h3 className="institution-name">{edu.institution}</h3>
@@ -51,29 +49,29 @@ const Education = () => {
 
                             <div className="edu-meta">
                                 <span className="duration">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <path d="M19 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path>
-                                        <polyline points="16 2 16 6"></polyline>
-                                        <polyline points="8 2 8 6"></polyline>
-                                        <line x1="3" y1="10" x2="21" y2="10"></line>
-                                    </svg>
+                                    <Calendar size={16} color="#6366f1" />
                                     {edu.duration}
                                 </span>
                                 <span className="location">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                        <circle cx="12" cy="10" r="3"></circle>
-                                    </svg>
+                                    <MapPin size={16} color="#ec4899" />
                                     {edu.location}
                                 </span>
                                 <span className="grade">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                    </svg>
+                                    <CheckCircle size={16} color="#14b8a6" />
                                     Grade: {edu.grade}
                                 </span>
                             </div>
+
+                            {edu.coursework && (
+                                <div className="edu-coursework">
+                                    <h5 className="coursework-title">Relevant Coursework</h5>
+                                    <div className="coursework-tags">
+                                        {edu.coursework.split(', ').map((course, idx) => (
+                                            <span key={idx} className="coursework-tag">{course}</span>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>

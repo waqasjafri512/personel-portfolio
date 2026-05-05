@@ -853,6 +853,113 @@ img {
   color: var(--color-accent);
 }
 
+.edu-coursework {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.coursework-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.coursework-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.coursework-tag {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  background: var(--color-bg-tertiary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  color: var(--color-text-secondary);
+  transition: var(--transition-fast);
+}
+
+.coursework-tag:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* ============================================
+   Certifications Section
+   ============================================ */
+.certifications {
+  padding: 100px 0;
+  background: var(--color-bg-secondary);
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.certification-card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  transition: var(--transition-normal);
+  backdrop-filter: blur(10px);
+}
+
+.certification-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-md), var(--shadow-glow);
+  transform: translateY(-5px);
+}
+
+.cert-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  background: var(--color-bg-tertiary);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+}
+
+.cert-icon {
+  font-size: 1.5rem;
+}
+
+.cert-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cert-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.4;
+}
+
+.cert-issuer {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cert-issuer svg {
+  color: var(--color-accent);
+}
+
 /* ============================================
    Skills Section
    ============================================ */
